@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna ❤️ Surprise</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .container {
+            padding: 50px 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        p {
+            font-size: 1.5em;
+            animation: fadeIn 3s ease-in-out forwards;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            background: #fff;
+            color: #ff5fa2;
+            cursor: pointer;
+            animation: fadeIn 4s forwards;
+        }
+
+        #msg {
+            display: none;
+            margin-top: 30px;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeIn {
+            0% {opacity: 0; transform: translateY(-20px);}
+            100% {opacity: 1; transform: translateY(0);}
+        }
+
+        /* Floating hearts */
+        .heart {
+            position: absolute;
+            color: #ff6b81;
+            font-size: 2em;
+            animation: floatUp 4s linear infinite;
+        }
+
+        @keyframes floatUp {
+            0% {transform: translateY(0) rotate(0deg);}
+            100% {transform: translateY(-700px) rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hey Krishna ❤️</h1>
+        <p>Ye special surprise sirf tumhare liye hai 💕</p>
+        <button onclick="showLove()">Tap for Surprise 💌</button>
+        <div id="msg">
+            Krishna,  
+            tum meri zindagi ka sabse beautiful hissa ho 🌹  
+            Kya tum meri life ka hamesha ke liye hissa banogi? 💖
+        </div>
+    </div>
+
+    <!-- Floating hearts -->
+    <div class="heart" style="left: 10%;">❤️</div>
+    <div class="heart" style="left: 30%;">💖</div>
+    <div class="heart" style="left: 50%;">❤️</div>
+    <div class="heart" style="left: 70%;">💖</div>
+    <div class="heart" style="left: 90%;">❤️</div>
+
+    <script>
+        function showLove(){
+            document.getElementById("msg").style.display="block";
+        }
+    </script>
+</body>
+</html>
